@@ -11,13 +11,13 @@ import ErrorPage from './pages/ErrorPage';
 function App() {
   return (
     <>
-    
       <Router>
         <Routes>
           <Route path='/' Component={Home}></Route>
           <Route path='/signup' Component={Signup}></Route>
           <Route path='/login' Component={Login}></Route>
           <Route path='/dashboard' Component={Dashboard}></Route>
+          <Route path='/dashboard/translate' Component={Dashboard}></Route>
           <Route path='/*' Component={ErrorPage}></Route>
         </Routes>
       </Router>

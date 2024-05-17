@@ -1,4 +1,7 @@
 #main-body {
+    top: 60px;
+    position: absolute;
+    height: -webkit-fill-available;
     display: flex;
     width: -webkit-fill-available;
     flex-wrap: wrap;
@@ -6,7 +9,6 @@
 }
 
 .sidebar {
-    top: 60px;
     width: 30%;
     height: -webkit-fill-available;
     background: #7000ff;
@@ -59,7 +61,6 @@
     height: -webkit-fill-available;
     background-color: bisque;
     position: relative;
-    top: 50%;
 }
 
 #download-video {
@@ -67,8 +68,6 @@
     height: -webkit-fill-available;
     background-color: #7000ff;
     position: relative;
-    top: 50%;
-    transform: translateY(-50%);
 }
 
 #translate-section {
@@ -76,8 +75,17 @@
     width: -webkit-fill-available;
     height: 300px;
     position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#action-section {
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+    position: absolute;
     left: 30%;
-    top: 60px;
     display: flex;
     flex-wrap: wrap;
 }

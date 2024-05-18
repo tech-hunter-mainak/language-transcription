@@ -440,9 +440,9 @@ button[class ^= navbar]:hover{
 
 /* banner two section */
 .banner-two{
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 80, 213, 0.9)), to(rgba(0, 90, 213, 0.85))), url('../images/banner-two-bg.png') top/cover no-repeat;
-    background: -o-linear-gradient(rgba(0, 80, 213, 0.9), rgba(0, 90, 213, 0.85)), url('../images/banner-two-bg.png') top/cover no-repeat;
-    background: linear-gradient(rgba(0, 80, 213, 0.9), rgba(0, 90, 213, 0.85)), url('../images/banner-two-bg.png') top/cover no-repeat;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 80, 213, 0.9)), to(rgba(0, 90, 213, 0.85))), url('../images/banner-2-colorsmoke.png') top/cover no-repeat;
+    background: -o-linear-gradient(rgba(0, 80, 213, 0.9), rgba(0, 90, 213, 0.85)), url('../images/banner-2-colorsmoke.png') top/cover no-repeat;
+    background: linear-gradient(rgba(0, 80, 213, 0.9), rgba(0, 90, 213, 0.85)), url('../images/banner-2-colorsmoke.png') top/cover no-repeat;
     padding: 13.6rem 0;
 }
 .banner-two-left img{
@@ -506,9 +506,9 @@ button[class ^= navbar]:hover{
     margin-top: 14rem;
 }
 .package-service{
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 80, 213, 0.85)), to(rgba(0, 80, 213, 0.95))), url('../images/package-service-img.jpg') center/cover no-repeat;
-    background: -o-linear-gradient(rgba(0, 80, 213, 0.85), rgba(0, 80, 213, 0.95)), url('../images/package-service-img.jpg') center/cover no-repeat;
-    background: linear-gradient(rgba(0, 80, 213, 0.85), rgba(0, 80, 213, 0.95)), url('../images/package-service-img.jpg') center/cover no-repeat;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(138, 175, 233, 0.85)), to(rgba(0, 80, 213, 0.95))), url('../images/package1.jpeg') center/cover no-repeat;
+    background: -o-linear-gradient(rgba(0, 80, 213, 0.85), rgba(0, 80, 213, 0.95)), url('../images/package1.jpeg') center/cover no-repeat;
+    background: linear-gradient(rgba(0, 80, 213, 0.85), rgba(0, 80, 213, 0.95)), url('../images/package1.jpeg') center/cover no-repeat;
 }
 .package-service-head{
     color: var(--light-color);

@@ -9,7 +9,7 @@
 }
 
 .sidebar {
-    width: 30%;
+    width: min(30%,250px);
     height: -webkit-fill-available;
     background: #7000ff;
     position: absolute;
@@ -59,7 +59,7 @@
 #upload-video {
     width: 50%;
     height: -webkit-fill-available;
-    background-color: bisque;
+    background-color: rgb(255, 255, 255);
     position: relative;
 }
 
@@ -85,7 +85,7 @@
     width: -webkit-fill-available;
     height: -webkit-fill-available;
     position: absolute;
-    left: 30%;
+    left: min(30%,250px);
     display: flex;
     flex-wrap: wrap;
 }

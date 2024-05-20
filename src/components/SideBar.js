@@ -3,6 +3,7 @@ import "../css/SideBar.css"
 import { useState } from 'react'
 import ErrorPage from '../pages/ErrorPage'
 import TranslateScetion from './TranslateScetion'
+import Videos from './Videos'
 
 function SideBar() {
     const [section, setSection] = useState(<TranslateScetion/>)
@@ -28,7 +29,7 @@ function SideBar() {
         cssReset();
         document.getElementById("option-uploads").style.backgroundColor = "#ebe3f5"
         document.getElementById("option-uploads").style.color = "#290557"
-        setSection("Uploads")
+        setSection(<Videos/>)
     }
     const changeStateTranslate = () => {
         cssReset();

@@ -2,7 +2,7 @@ import React from 'react'
 import NavBar from '../components/NavBar'
 import "../css/normalize.css"
 import "../css/main.css"
-import { Link } from 'react-router-dom'
+import { defer, Link } from 'react-router-dom'
 import { useRef } from 'react';
 // import "../js/script.js"
 import Logo from "../images/logo.jpg"
@@ -22,17 +22,62 @@ import Post3 from "../images/post-3.jpg"
 import Banner2 from "../images/banner-2-img.jpg"
 
 function Home() {
+    function onWindowLoad() {
+        const navbarShowBtn = document.querySelector('.navbar-show-btn');
+        const navbarCollapseDiv = document.querySelector('.navbar-collapse');
+        const navbarHideBtn = document.querySelector('.navbar-hide-btn');
+
+        if (navbarShowBtn && navbarCollapseDiv && navbarHideBtn) {
+            navbarShowBtn.onclick = function () {
+                navbarCollapseDiv.classList.add('navbar-show');
+            };
+
+            navbarHideBtn.onclick = function () {
+                navbarCollapseDiv.classList.remove('navbar-show');
+            };
+        } else {
+            console.error('Navbar elements not found');
+        }
+
+        function changeSearchIcon() {
+            const searchIconImg = document.querySelector('.search-icon img');
+            if (searchIconImg) {
+                let winSize = window.matchMedia("(min-width: 1200px)");
+                if (winSize.matches) {
+                    searchIconImg.src = "images/search-icon.png";
+                } else {
+                    searchIconImg.src = "images/search-icon-dark.png";
+                }
+            } else {
+                console.error('Search icon image not found');
+            }
+        }
+
+        window.onresize = function () {
+            changeSearchIcon();
+            document.body.classList.add('resize-animation-stopper');
+            clearTimeout(resizeTimer);
+            resizeTimer = setTimeout(function () {
+                document.body.classList.remove('resize-animation-stopper');
+            }, 400);
+        };
+
+        changeSearchIcon();
+
+        let resizeTimer;
+    }
+    
     return (
         <div>
             <title>LipSync</title>
-            
+
             <header className="header bg-blue">
                 <nav className="navbar bg-blue">
                     <div className="container flex">
                         <Link to="/" className="navbar-brand">
                             <img src={Logo} alt="site logo" />
                         </Link>
-                        <button type="button" className="navbar-show-btn">
+                        <button type="button" className="navbar-show-btn" onClick={onWindowLoad}>
                             <img src={HamMenuIcon} />
                         </button>
 
@@ -79,7 +124,7 @@ function Home() {
 
                 <div className="header-inner text-white text-center">
                     <div className="container grid">
-                        <div className="header-inner-left"><br/><br/><br/>
+                        <div className="header-inner-left"><br /><br /><br />
                             <h1>Lip-Sync<br /> <span>Voice Translation</span></h1>
                             <p className="lead">Deep Learning Model</p>
                             <p className="text text-md"><br /></p>
@@ -113,8 +158,8 @@ function Home() {
                                 <a href="#" className="btn btn-white">Learn More</a>
                             </div>
                             <div className="about-right flex">
-                                <div className="img" style={{"width":"100%"}}>
-                                    <img src={Hand} style={{"width": "100%"}} />
+                                <div className="img" style={{ "width": "100%" }}>
+                                    <img src={Hand} style={{ "width": "100%" }} />
                                 </div>
                             </div>
                         </div>
@@ -317,7 +362,7 @@ function Home() {
                     <div className="container grid">
                         <div className="contact-left">
                             <iframe src="https://maps.google.com/maps/embed?pb=?cid=9362887102108936347&entry=gps"
-                                width="600" height="450" style={{"border":"0"}} allowfullscreen=""
+                                width="600" height="450" style={{ "border": "0" }} allowfullscreen=""
                                 loading="lazy"></iframe>
                         </div>
                         <div className="contact-right text-white text-center bg-blue">
@@ -356,61 +401,61 @@ function Home() {
                                 bounds. Whether you're a healthcare provider seeking state-of-the-art solutions or a patient in
                                 search of reliable care, we're here to support you every step of the way. </p>
 
-                            NIT Silchar <br/>
-                                Assam <br/>
-                                    India
-                                </div>
-
-                                <div className="footer-item">
-                                    <h3 className="footer-head">tags</h3>
-                                    <ul className="tags-list flex">
-                                        <li>medical care</li>
-                                        <li>emergency</li>
-                                        <li>therapy</li>
-                                        <li>surgery</li>
-                                        <li>medication</li>
-                                        <li>nurse</li>
-                                    </ul>
-                                </div>
-
-                                <div className="footer-item">
-                                    <h3 className="footer-head">Quick Links</h3>
-                                    <ul>
-                                        <li><a href="#" className="text-white">Our Services</a></li>
-                                        <li><a href="#" className="text-white">Our Plan</a></li>
-                                        <li><a href="#" className="text-white">Privacy Policy</a></li>
-                                        <li><a href="#" className="text-white">Appointment Schedule</a></li>
-                                    </ul>
-                                </div>
-
-                                <div className="footer-item">
-                                    <h3 className="footer-head">make an appointment</h3>
-                                    <p className="text text-md">Thank you for entrusting us with your health. We look forward to serving you
-                                        again soon.</p>
-                                    <ul className="appointment-info">
-                                        <li>8:00 AM - 11:00 AM</li>
-                                        <li>2:00 PM - 05:00 PM</li>
-                                        <li>8:00 PM - 11:00 PM</li>
-                                        <li>
-                                            <i className="fas fa-envelope"></i>
-                                            <span>mainak_ug_23@cse.nits.ac.in</span>
-                                        </li>
-                                        <li>
-                                            <i className="fas fa-phone"></i>
-                                            <span><a herf="tel:+919163930090" style={{"color": "white"}}>+91 91639 30090</a></span>
-                                        </li>
-                                    </ul>
-                                </div>
+                            NIT Silchar <br />
+                            Assam <br />
+                            India
                         </div>
 
-                        <div className="footer-links">
-                            <ul className="flex">
-                                <li><a href="#" className="text-white flex"> <i className="fab fa-facebook-f"></i></a></li>
-                                <li><a href="#" className="text-white flex"> <i className="fab fa-twitter"></i></a></li>
-                                <li><a href="#" className="text-white flex"> <i className="fab fa-linkedin"></i></a></li>
+                        <div className="footer-item">
+                            <h3 className="footer-head">tags</h3>
+                            <ul className="tags-list flex">
+                                <li>medical care</li>
+                                <li>emergency</li>
+                                <li>therapy</li>
+                                <li>surgery</li>
+                                <li>medication</li>
+                                <li>nurse</li>
+                            </ul>
+                        </div>
+
+                        <div className="footer-item">
+                            <h3 className="footer-head">Quick Links</h3>
+                            <ul>
+                                <li><a href="#" className="text-white">Our Services</a></li>
+                                <li><a href="#" className="text-white">Our Plan</a></li>
+                                <li><a href="#" className="text-white">Privacy Policy</a></li>
+                                <li><a href="#" className="text-white">Appointment Schedule</a></li>
+                            </ul>
+                        </div>
+
+                        <div className="footer-item">
+                            <h3 className="footer-head">make an appointment</h3>
+                            <p className="text text-md">Thank you for entrusting us with your health. We look forward to serving you
+                                again soon.</p>
+                            <ul className="appointment-info">
+                                <li>8:00 AM - 11:00 AM</li>
+                                <li>2:00 PM - 05:00 PM</li>
+                                <li>8:00 PM - 11:00 PM</li>
+                                <li>
+                                    <i className="fas fa-envelope"></i>
+                                    <span>mainak_ug_23@cse.nits.ac.in</span>
+                                </li>
+                                <li>
+                                    <i className="fas fa-phone"></i>
+                                    <span><a herf="tel:+919163930090" style={{ "color": "white" }}>+91 91639 30090</a></span>
+                                </li>
                             </ul>
                         </div>
                     </div>
+
+                    <div className="footer-links">
+                        <ul className="flex">
+                            <li><a href="#" className="text-white flex"> <i className="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#" className="text-white flex"> <i className="fab fa-twitter"></i></a></li>
+                            <li><a href="#" className="text-white flex"> <i className="fab fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
             </footer>
             <script src="js/script.js"></script>
         </div>

@@ -1,0 +1,247 @@
+
+            <!--==================== SPONSORS ====================-->
+            <section class="sponsor section">
+                <div class="sponsor__container container grid">
+                    <div class="sponsor__content">
+                        <img src="assets/img/sponsors1.png" alt="" class="sponsor__img">
+                    </div>
+                    <div class="sponsor__content">
+                        <img src="assets/img/sponsors2.png" alt="" class="sponsor__img">
+                    </div>
+                    <div class="sponsor__content">
+                        <img src="assets/img/sponsors3.png" alt="" class="sponsor__img">
+                    </div>
+                    <div class="sponsor__content">
+                        <img src="assets/img/sponsors4.png" alt="" class="sponsor__img">
+                    </div>
+                    <div class="sponsor__content">
+                        <img src="assets/img/sponsors5.png" alt="" class="sponsor__img">
+                    </div>
+                </div>
+            </section>
+
+
+            
+            <!--==================== SUBSCRIBE ====================-->
+            <section class="subscribe section">
+                <div class="subscribe__bg">
+                    <div class="subscribe__container container">
+                        <h2 class="section__title subscribe__title">Subscribe Our <br> Newsletter</h2>
+                        <p class="subscribe__description">Subscribe to our newsletter and get a 
+                            special 30% discount.
+                        </p>
+    
+                        <form action="" class="subscribe__form">
+                            <input type="text" placeholder="Enter email" class="subscribe__input">
+    
+                            <button class="button">
+                                Subscribe
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            
+
+            
+            <!--==================== PLACES ====================-->
+            <section class="place section" id="place">
+                <h2 class="section__title">Choose Your Place</h2>
+
+                <div class="place__container container grid">
+                    <!--==================== PLACES CARD 1 ====================-->
+                    <div class="place__card">
+                        <img src="assets/img/place1.jpg" alt="" class="place__img">
+                        
+                        <div class="place__content">
+                            <span class="place__rating">
+                                <i class="ri-star-line place__rating-icon"></i>
+                                <span class="place__rating-number">4,8</span>
+                            </span>
+
+                            <div class="place__data">
+                                <h3 class="place__title">Bali</h3>
+                                <span class="place__subtitle">Indonesia</span>
+                                <span class="place__price">$2499</span>
+                            </div>
+                        </div>
+
+                        <button class="button button--flex place__button">
+                            <i class="ri-arrow-right-line"></i>
+                        </button>
+                    </div>
+
+                    <!--==================== PLACES CARD 2 ====================-->
+                    <div class="place__card">
+                        <img src="assets/img/place2.jpg" alt="" class="place__img">
+                        
+                        <div class="place__content">
+                            <span class="place__rating">
+                                <i class="ri-star-line place__rating-icon"></i>
+                                <span class="place__rating-number">5,0</span>
+                            </span>
+
+                            <div class="place__data">
+                                <h3 class="place__title">Bora Bora</h3>
+                                <span class="place__subtitle">Polinesia</span>
+                                <span class="place__price">$1599</span>
+                            </div>
+                        </div>
+
+                        <button class="button button--flex place__button">
+                            <i class="ri-arrow-right-line"></i>
+                        </button>
+                    </div>
+
+                    <!--==================== PLACES CARD 3 ====================-->
+                    <div class="place__card">
+                        <img src="assets/img/place3.jpg" alt="" class="place__img">
+                        
+                        <div class="place__content">
+                            <span class="place__rating">
+                                <i class="ri-star-line place__rating-icon"></i>
+                                <span class="place__rating-number">4,9</span>
+                            </span>
+
+                            <div class="place__data">
+                                <h3 class="place__title">Hawaii</h3>
+                                <span class="place__subtitle">EE.UU</span>
+                                <span class="place__price">$3499</span>
+                            </div>
+                        </div>
+
+                        <button class="button button--flex place__button">
+                            <i class="ri-arrow-right-line"></i>
+                        </button>
+                    </div>
+
+                    <!--==================== PLACES CARD 4 ====================-->
+                    <div class="place__card">
+                        <img src="assets/img/place4.jpg" alt="" class="place__img">
+                        
+                        <div class="place__content">
+                            <span class="place__rating">
+                                <i class="ri-star-line place__rating-icon"></i>
+                                <span class="place__rating-number">4,8</span>
+                            </span>
+
+                            <div class="place__data">
+                                <h3 class="place__title">Whitehaven</h3>
+                                <span class="place__subtitle">Australia</span>
+                                <span class="place__price">$2499</span>
+                            </div>
+                        </div>
+
+                        <button class="button button--flex place__button">
+                            <i class="ri-arrow-right-line"></i>
+                        </button>
+                    </div>
+
+                    <!--==================== PLACES CARD 5 ====================-->
+                    <div class="place__card">
+                        <img src="assets/img/place5.jpg" alt="" class="place__img">
+                        
+                        <div class="place__content">
+                            <span class="place__rating">
+                                <i class="ri-star-line place__rating-icon"></i>
+                                <span class="place__rating-number">4,8</span>
+                            </span>
+
+                            <div class="place__data">
+                                <h3 class="place__title">Hvar</h3>
+                                <span class="place__subtitle">Croacia</span>
+                                <span class="place__price">$1999</span>
+                            </div>
+                        </div>
+
+                        <button class="button button--flex place__button">
+                            <i class="ri-arrow-right-line"></i>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+
+            <!--divers images-->
+            
+                    <div class="experience__img grid">
+                        <div class="experience__overlay">
+                            <img src="assets/img/experience1.jpg" alt="" class="experience__img-one">
+                        </div>
+                        
+                        <div class="experience__overlay">
+                            <img src="assets/img/experience2.jpg" alt="" class="experience__img-two">
+                        </div>
+                    </div>
+
+
+            
+                                <span class="discover__description">24 tours available</span>
+
+
+
+                    
+                    <div class="home__info">
+                        <div>
+                            <span class="home__info-title">5 best places to visit</span>
+                            <a href="" class="button button--flex button--link home__info-button">
+                                More <i class="ri-arrow-right-line"></i>
+                            </a>
+                        </div>
+
+                        <div class="home__info-overlay">
+                            <img src="assets/img/home2.jpg" alt="" class="home__info-img">
+                        </div>
+                    </div>
+
+
+
+                    <li class="nav__item">
+                        <a href="#place" class="nav__link">Places</a>
+                    </li>
+
+                    
+        
+
+         @media screen and (max-width: 800px) {
+            #faq-section {
+                flex-wrap: wrap;
+            }
+        }
+
+
+
+
+
+.experience__img {
+  position: relative;
+  padding-bottom: 2rem;
+}
+
+.experience__img-one, 
+.experience__img-two {
+  transition: var(--img-transition);
+}
+
+.experience__img-one:hover, 
+.experience__img-two:hover {
+  transform: var(--img-scale);
+}
+
+
+
+        .experience__overlay {
+  overflow: var(--img-hidden);
+}
+
+.experience__overlay:nth-child(1) {
+  width: 263px;
+  margin-right: 2rem;
+}
+
+.experience__overlay:nth-child(2) {
+  width: 120px;
+  position: absolute;
+  top: 2rem;
+  right: 0;
+}

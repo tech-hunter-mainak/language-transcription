@@ -27,7 +27,7 @@ connection.connect(err => {
         console.error('Database connection failed:', err);
         return;
     }
-    else {console.log('Database connected');}
+    else { console.log('Database connected'); }
 });
 
 connection.query("CREATE DATABASE IF NOT EXISTS `lipsync`", function (err, result) {
@@ -49,7 +49,7 @@ connection.connect(err => {
         console.error('Database connection failed:', err);
         return;
     }
-    else {console.log('Database connected');}
+    else { console.log('Database connected'); }
 });
 
 connection.query("CREATE TABLE IF NOT EXISTS `lipsync`.`userregdetails` (`uid` INT NOT NULL AUTO_INCREMENT , `u_fname` TEXT NOT NULL , `u_lname` TEXT NOT NULL , `u_mail` VARCHAR(90) NOT NULL , `u_pass` VARCHAR(16) NOT NULL , `u_reg_datetime` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP , PRIMARY KEY (`uid`))", function (err, result) {
@@ -87,6 +87,12 @@ app.post('/api/users', (req, res) => {
         })
         res.send('Data inserted successfully');
     });
+});
+
+app.post('/api/vid', (req, res) => {
+    app.get("/api/video", (req, result) => {
+        res(result)
+    })
 });
 
 app.listen(port, () => {
